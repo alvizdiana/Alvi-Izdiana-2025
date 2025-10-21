@@ -22,6 +22,7 @@ function flipPhoto() {
   }
   flipped.value = true
 }
+const resumeUrl = import.meta.env.BASE_URL + 'resume.pdf'
 </script>
 
 <template>
@@ -62,11 +63,7 @@ function flipPhoto() {
           />
         </svg>
 
-        <span class="pl-3"
-          ><a :href="import.meta.env.BASE_URL + 'resume.pdf'" download="resume.pdf">
-            Download Resume
-          </a></span
-        >
+        <span class="pl-3"><a :href="resumeUrl" download="resume.pdf"> Download Resume </a></span>
       </button>
     </div>
 
