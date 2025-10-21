@@ -4,23 +4,6 @@ import { onMounted, onBeforeUnmount } from 'vue'
 let vantaEffect = null
 
 onMounted(() => {
-  // if (window.innerWidth > 768) {
-  //   vantaEffect = window.VANTA?.BIRDS?.({
-  //     el: document.getElementById('vanta-bg'),
-  //     mouseControls: true,
-  //     touchControls: true,
-  //     gyroControls: false,
-  //     minHeight: 200.0,
-  //     minWidth: 200.0,
-  //     scale: 1.0,
-  //     scaleMobile: 1.0,
-  //     colorMode: 'variance',
-  //     birdSize: 0.7,
-  //     wingSpan: 20.0,
-  //     speedLimit: 4.0,
-  //     separation: 50.0,
-  //   })
-  // }
   vantaEffect = window.VANTA?.BIRDS?.({
     el: document.getElementById('vanta-bg'),
     mouseControls: true,

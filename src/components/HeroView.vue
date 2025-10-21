@@ -62,9 +62,7 @@ function flipPhoto() {
           />
         </svg>
 
-        <span class="pl-3"
-          ><a href="public/resume.pdf" download="resume.pdf"> Download Resume </a></span
-        >
+        <span class="pl-3"><a href="/resume.pdf" download="resume.pdf"> Download Resume </a></span>
       </button>
     </div>
 
