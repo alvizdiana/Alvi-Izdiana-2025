@@ -24,13 +24,7 @@ const scrollToSection = (href: string, offset = 80) => {
   <header class="top-0 z-50">
     <div class="container mx-auto flex justify-between items-center p-4 md:px-8 flex-wrap">
       <a href="#" @click.prevent="scrollToSection('#about', 80)">
-        <img
-          alt="Vue logo"
-          src="@/assets/me/icon.png"
-          width="50"
-          height="50"
-          class="rounded-full"
-        />
+        <img alt="Vue logo" src="/public/me/icon.png" width="50" height="50" class="rounded-full" />
       </a>
 
       <nav class="hidden md:block">

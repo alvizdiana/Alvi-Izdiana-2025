@@ -3,14 +3,13 @@ import { ref } from 'vue'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 AOS.init()
-import gsap from 'gsap'
-const photoA = new URL('@/assets/me/default.png', import.meta.url).href
+const photoA = new URL('/me/default.png', import.meta.url).href
 
 const photoOptions = [
-  new URL('@/assets/me/alvi-itech-1.png', import.meta.url).href,
-  new URL('@/assets/me/alvi-magang-1.png', import.meta.url).href,
-  new URL('@/assets/me/alvi-sempro-1.png', import.meta.url).href,
-  new URL('@/assets/me/alvi-sidang-1.png', import.meta.url).href,
+  new URL('/me/alvi-itech-1.png', import.meta.url).href,
+  new URL('/me/alvi-magang-1.png', import.meta.url).href,
+  new URL('/me/alvi-sempro-1.png', import.meta.url).href,
+  new URL('/me/alvi-sidang-1.png', import.meta.url).href,
 ]
 
 const photoB = ref(photoOptions[0])
@@ -29,26 +28,24 @@ function flipPhoto() {
   <div class="flex flex-col justify-center items-center mt-10 md:mt-20 md:flex-row">
     <div class="md:w-1/2 w-full text-center h-auto md:h-20 md:text-left md:pr-10 md:mb-0">
       <h1
-        class="flex flex-col md:flex-row font-mono text-white text-2xl md:text-4xl lg:text-5xl font-bold pb-2 md:mt-15 lg:mt-10"
+        class="flex flex-col md:flex-row font-mono text-white text-2xl md:text-4xl font-bold pb-2 md:mt-15 lg:mt-10"
       >
         🕊️ Hello,
         <span
-          class="text-3xl md:text-4xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#a74760] to-[#fbb359]"
+          class="text-3xl font-bold md:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#a74760] to-[#fbb359]"
           >I'am Alvi</span
         >
       </h1>
-      <h2
-        class="font-mono text-white text-xl md:text-2xl lg:text-3xl p-5 lg:py-2 text-shadow-lg/30"
-      >
+      <h2 class="font-mono text-white text-xl md:text-2xl p-5 lg:py-2 text-shadow-lg/30">
         An IT Fresh Graduate
       </h2>
-      <p class="text-white p-5 text-center md:text-justify md:w-auto text-shadow-lg/30">
+      <p class="text-white text-sm p-5 text-center md:text-justify md:w-auto text-shadow-lg/30">
         I'm an aspiring Fullstack Developer with hands-on experience in
         <b>CodeIgniter 4 and MySQL</b>. I also like Analyzing, using
         <b>Python, Excel, and Google Sheets</b> to turn data into insights.
       </p>
       <button
-        class="inline-flex items-center font-mono rounded-full md:px-7 py-2 md:py-3 text-sm md:text-xl bg-transparent border-2 border-[#fefedf] text-[#fefedf] hover:border-transparent hover:bg-[#744A82] p-3 m-3 transition duration-300 h-13"
+        class="inline-flex items-center font-mono rounded-full md:px-7 py-2 md:py-3 text-sm bg-transparent border-2 border-[#fefedf] text-[#fefedf] hover:border-transparent hover:bg-[#744A82] p-3 m-3 transition duration-300 h-10"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +53,7 @@ function flipPhoto() {
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="size-6"
+          class="size-4"
         >
           <path
             stroke-linecap="round"

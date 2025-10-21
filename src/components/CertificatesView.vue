@@ -5,19 +5,19 @@ const getImageUrl = (name: string): string => {
 const certificates = [
   {
     title: 'Magang Bersertifikat 2023 (Dinkominfo Surabaya)',
-    imgSrc: getImageUrl('../assets/certificate/alvi-sertif-magang.png'),
+    imgSrc: getImageUrl('/certificate/alvi-sertif-magang.png'),
     sourceLink:
       'https://servicedesk.surabaya.go.id/qr/eyJpdiI6Im5MOVp1VHBTeUx1Q3Vib0xZZnRYK2c9PSIsInZhbHVlIjoiK0g4c1BKRHFTdWliZG5UMHdLdG9CUT09IiwibWFjIjoiOTE2NTBkMDEzYTAyNTJhZjNhZDZkMTA3NDE1MDIzMGJlY2MyMTVkNTVjOWNiMGY0MDdmYzVjYjQ5MTQyM2JiZiIsInRhZyI6IiJ9',
   },
   {
     title: 'HelpDesk Technician Certificate',
-    imgSrc: getImageUrl('../assets/certificate/alvi-sertif-hdt.png'),
+    imgSrc: getImageUrl('/certificate/alvi-sertif-hdt.png'),
     sourceLink:
       'https://drive.google.com/file/d/1THXQd4JFpnuuqrOlHN2zJ_y3AmkVEEKc/view?usp=sharing',
   },
   {
     title: 'R for Data Science Certificates -DQLab',
-    imgSrc: getImageUrl('../assets/certificate/alvi-sertif-R-dqlab.png'),
+    imgSrc: getImageUrl('/certificate/alvi-sertif-R-dqlab.png'),
     sourceLink: 'https://academy.dqlab.id/certificate/pdf/DQLABPEDTRJENHOH',
   },
 ]
