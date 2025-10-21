@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const getImageUrl = (name: string): string => {
-  return new URL(name, import.meta.url).href
+  return import.meta.env.BASE_URL + name.replace(/^\/+/, '')
 }
 const certificates = [
   {

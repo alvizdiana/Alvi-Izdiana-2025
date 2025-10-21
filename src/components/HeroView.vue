@@ -3,13 +3,13 @@ import { ref } from 'vue'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 AOS.init()
-const photoA = new URL('/me/default.png', import.meta.url).href
+const photoA = 'me/default.png'
 
 const photoOptions = [
-  new URL('/me/alvi-itech-1.png', import.meta.url).href,
-  new URL('/me/alvi-magang-1.png', import.meta.url).href,
-  new URL('/me/alvi-sempro-1.png', import.meta.url).href,
-  new URL('/me/alvi-sidang-1.png', import.meta.url).href,
+  'me/alvi-itech-1.png',
+  'me/alvi-magang-1.png',
+  'me/alvi-sempro-1.png',
+  'me/alvi-sidang-1.png',
 ]
 
 const photoB = ref(photoOptions[0])

@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 
 const getImageUrl = (name: string): string => {
-  return new URL(name, import.meta.url).href
+  return import.meta.env.BASE_URL + name.replace(/^\/+/, '')
 }
 
 interface Project {
@@ -19,7 +19,7 @@ const projects: Project[] = [
     title: 'Web Development Project',
     description:
       'An expert system for early detection of depression, built with CodeIgniter 4 and MySQL, using the Forward Chaining method.',
-    imgSrc: getImageUrl('/projects/web-dev-project.png'),
+    imgSrc: getImageUrl('/Projects/web-dev-project.png'),
     sourceLink: 'https://github.com/alvizdiana/Expert-System-for-Depressive-with-Forward-Chaining',
     detailProject:
       'An expert system for early detection of depressive disorders built with CodeIgniter 4 and MySQL, this system uses the forward chaining method as its inference engine, SMTP Gmail for email validation, and equipped with AJAX on its dashboard to display page changes without needing to reload the page.',
@@ -29,7 +29,7 @@ const projects: Project[] = [
     title: 'Data Visualization and Analyst',
     description:
       'Web-based interactive data visualization dashboard for employee data, built with Dash and Plotly.',
-    imgSrc: getImageUrl('/projects/int-dash-analyst.png'),
+    imgSrc: getImageUrl('/Projects/int-dash-analyst.png'),
     sourceLink: 'https://github.com/alvizdiana/Employee-Satisfaction-And-Performance-with-Dash',
     detailProject:
       'An interactive web-based dashboard for data visualization and analysis. Built with Dash (Plotly, Dash Core Component, Dash Bootstrap Component), the analysis results include patterns of relationships between several factors with performance scores and employee satisfaction levels, as well as factors that influence employee resignation decisions.',
@@ -39,7 +39,7 @@ const projects: Project[] = [
     title: 'AIDS Classification with KNN',
     description:
       'A data mining project for classifying AIDS patients based on their medical records, using the K-Nearest Neighbors algorithm.',
-    imgSrc: getImageUrl('/projects/aids-classification-KNN.png'),
+    imgSrc: getImageUrl('/Projects/aids-classification-KNN.png'),
     sourceLink: 'https://github.com/alvizdiana/AIDS-Classification-with-K-NN',
     detailProject:
       'A data mining project for classifying patients infected with AIDS using the K-Nearest Neighbor (K-NN) algorithm, equipped with a confusion matrix to compare predicted data with actual data and evaluate the performance of K-NN with evaluation metrics (accuracy, precision, recall, and f1-score)',
@@ -49,7 +49,7 @@ const projects: Project[] = [
     title: 'Web UI Design Project',
     description:
       'A project focused on designing user interfaces for web applications, utilizing modern design principles with Figma.',
-    imgSrc: getImageUrl('/projects/web-UI-Design.png'),
+    imgSrc: getImageUrl('/Projects/web-UI-Design.png'),
     sourceLink:
       'https://www.figma.com/design/kfi24SKHOaSMybfFLMCdBL/WebApp-UMKM--Copy-?m=auto&t=FzRHgXCwxqrzj87S-1',
     detailProject:
